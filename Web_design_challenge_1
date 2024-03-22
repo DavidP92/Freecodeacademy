@@ -1,0 +1,156 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<head>
+<html lang="en">
+  <meta char="utf-8">
+  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <title>Renewables Energy Survey Form</title>
+
+ <form id="survey-form" method="post">
+    <body>
+      <h1 id="title">
+        Renewable Energy Survey
+      </h1>
+      <p id="description"> Survey to determine the public's interest within renewable energy and which types. 
+      </p>
+  <fielset id="personal-info">
+    <label id="name-label">Please enter your full name here:
+      <input id="name" type="text" placeholder="David G. Paez" required>
+  </label>
+    <label id="email-label" >Please enter your email here:<input id="email" type="email" placeholder="Davidpaez1006@gmail.com" required></label>
+    <label id="number-label">Please enter your phone number: <input id="number" type="number" placeholder="719-555-5555" min="7" max="10"></label>
+    <label id="address-label">Please provide your address. <input type="text" id="address" placeholder="SunsetRidge"> </label>
+    <label>Please enter the state of residence: 
+      <select id="dropdown" placeholder="Colorado">
+      <option value="1">Colorado</option>
+      <option value="2">Everywhere Else...</option>
+    </select>
+  </fieldset>
+
+<fieldset>
+  <legend id="selects">Which renewable energy would you personally invest in?(required)</legend>      
+        <label for="solar" id="bubble"><input id="solar" type="radio" name="energy-type" class="inline" value="1" checked />Solar-power</label>
+        <label for="wind" id="bubble"><input id="wind" type="radio" name="energy-type" class="inline" value="2"/> Wind-power</label>
+        <label for="Hydro" id="bubble"><input id="Hydro" type="Radio" name="energy-type" class="inline" value="3">Hydro-power</label> 
+  </fieldset>
+  
+    <legend id="checkboxes">Please select the following interest that apply to you!</legend>
+      <input type="checkbox" value="earth"><label>Batteries</label>
+      <input type="checkbox" value="sun"><label>Solar</label>
+    <input type="checkbox" value="water"><label>Wind-Turbines
+          </label>
+
+   <label for="Feeback">
+    <textarea id="Feedback" name="feedback" rows="5" cols="30" placeholder="What are some products that your interested in? Save Money, How?"></textarea>
+      
+    <label for="submit">
+      <input type="submit" value="Submit" id="submit"/>
+    </label>
+
+  </form>
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+background-color: blue;
+  color: #f5f6f7;
+  font-family: Georgia;
+  font-size: 16px;
+}
+
+#description {
+  margin: 1em auto;
+  text-align: center;
+}
+
+#title {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.inline{
+  display: inline; 
+}
+
+#selects{
+  margin:auto;
+  padding-top:20;
+}
+#bubble{
+  margin:auto; text-align:left;
+}
+#checkboxes{
+ font-size:16px; text-align:center;
+ display:inline;
+}
+
+** end of undefined **
+
